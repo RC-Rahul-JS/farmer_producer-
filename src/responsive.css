@@ -129,7 +129,7 @@
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
-    padding-top: 82px !important;   /* exactly clears the navbar without hiding text */
+    padding-top: 130px !important;   /* shifted further down as requested */
     padding-bottom: 36px !important;   /* shifted UP to prevent cropping by trust banner */
     padding-left: 16px !important;
     padding-right: 16px !important;
