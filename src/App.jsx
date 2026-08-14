@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
@@ -8,14 +9,25 @@ import AboutPage2 from './pages/AboutPage2'
 import LeadershipPage from './pages/LeadershipPage'
 import ServicesPage from './pages/ServicesPage'
 import ContactPage from './pages/ContactPage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 
-function App() {
+function MainPage() {
   const [activeSection, setActiveSection] = useState('home')
+  const location = useLocation()
 
   const scrollToSection = (id) => {
     setActiveSection(id)
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
+
+  useEffect(() => {
+    // If navigating back with a section query parameter
+    const searchParams = new URLSearchParams(location.search)
+    const section = searchParams.get('section')
+    if (section) {
+      setTimeout(() => scrollToSection(section), 100)
+    }
+  }, [location])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,6 +57,17 @@ function App() {
       <ContactPage />
       <Footer scrollToSection={scrollToSection} />
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+      </Routes>
+    </Router>
   )
 }
 

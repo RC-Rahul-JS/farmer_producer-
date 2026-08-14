@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Footer({ scrollToSection }) {
   const links = [
     { label: 'Home', id: 'home' },
@@ -89,7 +91,7 @@ export default function Footer({ scrollToSection }) {
         <div className="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <div>© {new Date().getFullYear()} Kisaan Agri Warehousing Private Limited. All Rights Reserved.</div>
           <div className="flex items-center gap-4 text-[11px]">
-            <span>Agriculture</span> • <span>Rural Business</span> • <span>Warehousing</span> • <span>Agri-Finance</span>
+            <span>Agriculture</span> • <span>Rural Business</span> • <span>Warehousing</span> • <span>Agri-Finance</span> • <Link to="/privacy-policy" className="hover:text-green-400 transition-colors">Privacy Policy</Link>
           </div>
         </div>
       </div>
