@@ -7,7 +7,7 @@ export default function HomePage({ scrollToSection }) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 home-content px-4 lg:px-6 max-w-[1400px] mx-auto flex flex-col justify-between w-full" style={{minHeight:'100vh', paddingTop:'6rem', paddingBottom:'3rem'}}>
+      <div className="relative z-10 home-content px-4 lg:px-6 max-w-[1400px] mx-auto flex flex-col justify-between lg:justify-center w-full" style={{minHeight:'100vh', paddingTop:'6rem', paddingBottom:'3rem'}}>
         <div className="home-grid grid grid-cols-1 lg:grid-cols-12 gap-6 items-center w-full">
 
           {/* LEFT: Hero Text */}
