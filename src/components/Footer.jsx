@@ -6,6 +6,8 @@ export default function Footer({ scrollToSection }) {
     { label: 'About & Leadership', id: 'about' },
     { label: 'Business Capabilities', id: 'services' },
     { label: 'Contact Us', id: 'contact' },
+    { label: 'Privacy Policy', id: '/privacy-policy' },
+    { label: 'Terms & Conditions', id: '/terms-conditions' },
   ]
 
   return (
@@ -90,8 +92,8 @@ export default function Footer({ scrollToSection }) {
         {/* Bottom */}
         <div className="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <div>© {new Date().getFullYear()} Kisaan Agri Warehousing Private Limited. All Rights Reserved.</div>
-          <div className="flex items-center gap-4 text-[11px]">
-            <span>Agriculture</span> • <span>Rural Business</span> • <span>Warehousing</span> • <span>Agri-Finance</span> • <Link to="/privacy-policy" className="hover:text-green-400 transition-colors">Privacy Policy</Link>
+          <div className="flex items-center flex-wrap justify-center sm:justify-end gap-x-4 gap-y-2 text-[11px]">
+            <span>Agriculture</span> • <span>Rural Business</span> • <span>Warehousing</span> • <span>Agri-Finance</span>
           </div>
         </div>
       </div>
