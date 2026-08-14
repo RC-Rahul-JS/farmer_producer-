@@ -300,8 +300,8 @@ export default function ContactPage() {
                   <div style={{display:'flex',flexDirection:'column',gap:6,marginBottom:10}}>
                     {[
                       {icon:'📞', text:'+91 9978993711', href:'tel:+919978993711'},
-                      {icon:'✉️', text:'janmajay.kharwar@kisanagri.co.in', href:'mailto:janmajay.kharwar@kisanagri.co.in'},
-                      {icon:'🌐', text:'www.kisanagri.co.in', href:'http://www.kisanagri.co.in', ext:true},
+                      {icon:'✉️', text:'janmajay.kharwar@kissanagri.co.in', href:'mailto:janmajay.kharwar@kissanagri.co.in'},
+                      {icon:'🌐', text:'www.kissanagri.co.in', href:'http://www.kissanagri.co.in', ext:true},
                     ].map(r => (
                       <a key={r.href} href={r.href} target={r.ext?'_blank':undefined} rel={r.ext?'noreferrer':undefined}
                         style={{display:'flex',alignItems:'center',gap:8,textDecoration:'none',color:'#e2e8f0',fontSize:11.5,fontWeight:600,transition:'color .18s'}}
@@ -319,7 +319,7 @@ export default function ContactPage() {
                   <p style={{margin:0,fontSize:10.5,color:'#94a3b8'}}>
                     <span style={{fontWeight:800,color:'#fff'}}>Board Directors: </span>Mr. Lalit • Mr. Saumya Ranjan Mallick
                   </p>
-                  <p style={{margin:0,fontSize:9,color:'#6ee7b7',fontFamily:'monospace'}}>CIN: U15200LO2024PTC234413</p>
+                  <p style={{margin:0,fontSize:9,color:'#6ee7b7',fontFamily:'monospace'}}>CIN: U52100UW2026PTC256413</p>
                 </div>
               </div>
 
